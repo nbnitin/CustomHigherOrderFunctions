@@ -29,7 +29,7 @@ extension Array {
 let a = [1,2,3,4]
 print(a.myMap{$0*2}) // Usage
 
-Compact Map:
+**Compact Map:**
 Returns an array of non-nil results of calling the given transformation with each element of this sequence
 Technically it does the same thing as map, but returns only non-nil elements.
 
@@ -52,7 +52,7 @@ extension Array {
 let a = ["1", "2", "shdh"]
 print(a.myCompactMap{Int($0)})
 
-Filter:
+**Filter:**
 Returns an array containing, in order, the elements of sequence that statisfy the given predicate
 Here our array should give only those elements which satisfy some condition.
 
@@ -74,7 +74,7 @@ extension Array {
 let a = [1,2,3,4,5]
 print(a.myFilter{$0 % 2 == 0})
 
-Reduce:
+**Reduce:**
 Returns the results of combining the elements of the sequence using the given closure
 So Reduce combines the elements of the array into a single value.
 
